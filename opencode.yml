@@ -15,4 +15,4 @@ windows:
         - source ~/miniconda3/etc/profile.d/conda.sh && conda activate school && clear
   - opencode:
       panes:
-        - source ~/miniconda3/etc/profile.d/conda.sh && conda activate school && clear && opencode
+        - source ~/miniconda3/etc/profile.d/conda.sh && conda activate school && clear && opencode --port 4096
