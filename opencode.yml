@@ -1,0 +1,18 @@
+name: opencode
+root: ~/Kaleb/
+
+# Run this before each window/pane command.
+# It tries conda's hook first, then falls back to sourcing conda.sh.
+on_project_start: |
+  source "$HOME/miniconda3/etc/profile.d/conda.sh"
+  conda activate school
+
+windows:
+  - code:
+      layout: 9dab,190x53,0,0[190x42,0,0,5,190x10,0,43,6]
+      panes:
+        - source ~/miniconda3/etc/profile.d/conda.sh && conda activate school && clear && nvim .
+        - source ~/miniconda3/etc/profile.d/conda.sh && conda activate school && clear
+  - opencode:
+      panes:
+        - source ~/miniconda3/etc/profile.d/conda.sh && conda activate school && clear && opencode

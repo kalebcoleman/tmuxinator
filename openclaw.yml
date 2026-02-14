@@ -1,0 +1,13 @@
+name: openclaw
+root: ~/Kaleb/
+
+# Run this before each window/pane command.
+# It tries conda's hook first, then falls back to sourcing conda.sh.windows:
+  - code:
+      layout: 9dab,190x53,0,0[190x42,0,0,5,190x10,0,43,6]
+      panes:
+        - nvim .
+        - clear
+  - openclaw:
+      panes:
+        - opencode
