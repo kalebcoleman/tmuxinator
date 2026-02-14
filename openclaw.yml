@@ -7,7 +7,7 @@ windows:
   - vps:
       layout: 9dab,190x53,0,0[190x42,0,0,5,190x10,0,43,6]
       panes:
-        - /usr/local/bin/nvim .
+        - nvim .
         - clear
   - opencode:
       panes:
