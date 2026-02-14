@@ -11,4 +11,4 @@ windows:
         - clear
   - opencode:
       panes:
-        - /home/kaleb/.opencode/bin/opencode --port 4096
+        - opencode --port 4096
